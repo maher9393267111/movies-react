@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +14,101 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+
+
+
+.h-undrline::after {
+  position: absolute;
+  /* right: auto; */
+  bottom: -1px;
+  display: block;
+  width: 125px;
+  height: 4px;
+  content: '';
+  background-image: linear-gradient(to right, #00afef, #034d68);
+}
+
+
+.tag-item{
+
+text-align: center;
+
+}
+
+
+.h-show::after{
+
+
+    position: absolute;
+    /* right: auto; */
+    bottom: -1px;
+    display: block;
+    width: 175px;
+    height: 4px;
+    content: '';
+    background-image: linear-gradient(to right, #00afef, #034d68);
+  
+  
+}
+
+
+.h-shpw{
+
+  background-image: linear-gradient(to right, #00afef, #034d68);
+}
+
+
+.video-overlay{
+
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  line-height: 1.42857143;
+  font-family: roboto condensed, sans-serif;
+  font-size: 16px;
+  color: #717171;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, .004);
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  -webkit-justify-content: center;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1040;
+  transform: translateZ(1000px);
+  transform-style: preserve-3d;
+  background: rgba(23, 23, 23, 0.85);
+  opacity: 1;
+}
+
+
+
+.video{
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  line-height: 1.42857143;
+  font-family: roboto condensed, sans-serif;
+  font-size: 16px;
+  color: #717171;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, .004);
+  -webkit-font-smoothing: antialiased;
+  -webkit-backface-visibility: hidden;
+  box-sizing: border-box;
+  border: none;
+  width: 100%;
+  box-shadow: 0 0 12px rgba(0,0,0,.19),0 6px 6px rgba(0,0,0,.23);
+  max-width: 100%;
+  text-align: initial;
+  height: 260px;
+  padding: 0px;
+  background: rgb(255, 255, 255);
+
+
+
 }
